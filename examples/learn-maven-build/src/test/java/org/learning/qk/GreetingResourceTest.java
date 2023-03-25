@@ -1,4 +1,4 @@
-package org.acme;
+package org.learning.qk;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("Non Blocking Hello from Quarkus !!!"));
+             .body(is("Hello from RESTEasy Reactive"));
     }
 
 }
