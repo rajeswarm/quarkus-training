@@ -23,7 +23,8 @@ public class TopicResourceTest {
 		topicToCreate.setTopicName("Java Programming");
 		topicToCreate.setTopicSequence(100);
 
-		given().when().body(topicToCreate, ObjectMapperType.JACKSON_2).contentType(ContentType.JSON).post("/v2/topics")
+		given().when().body(topicToCreate, ObjectMapperType.JACKSON_2).
+		contentType(ContentType.JSON).post("/v2/topics")
 				.then().statusCode(201);
 	}
 	
